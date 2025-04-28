@@ -3,6 +3,7 @@ function Buttons({ onIncrement, onDecrement }) {
         <div>
             <button onClick={onDecrement}>-</button>
             <button onClick={onIncrement}>+</button>
+            <button onClick={onReset}>Reset</button>
         </div>
     );
 }
