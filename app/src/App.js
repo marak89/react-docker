@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import RegistrationForm from "./components/RegistrationForm";
+import Counter from "./components/Counter/Counter";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-          <RegistrationForm />
+          <Counter />
 
       </header>
     </div>
