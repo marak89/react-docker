@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/welcome';
+
 
 function App() {
   return (
@@ -7,7 +9,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <Welcome name="Sara"phone="12345" />
+		  <Welcome name="Adam" phone="12345" />
         </p>
         <a
           className="App-link"
