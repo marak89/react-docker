@@ -4,6 +4,7 @@ import Welcome from './components/welcome';
 import Counter from "./components/counter";
 import TytulDynamiczny from "./components/TytulDynamiczny";
 import UserList from "./components/UserList";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 		  <Counter />
           <TytulDynamiczny />
           <UserList />
+          <TodoList />
 
       </header>
     </div>
