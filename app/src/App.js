@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/welcome';
-
+import Counter from "./components/counter";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <Welcome name="Sara"phone="12345" />
-		  <Welcome name="Adam" phone="12345" />
+		  <Counter />
         </p>
         <a
           className="App-link"
