@@ -3,6 +3,7 @@ import './App.css';
 import Welcome from './components/welcome';
 import Counter from "./components/counter";
 import TytulDynamiczny from "./components/TytulDynamiczny";
+import UserList from "./components/UserList";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Welcome name="Sara" phone="12345" />
 		  <Counter />
           <TytulDynamiczny />
+          <UserList />
 
       </header>
     </div>
