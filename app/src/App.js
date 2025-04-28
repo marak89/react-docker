@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-          <Welcome name="Sara" phone="12345" />
+          <Welcome name={"Sara"} phone="12345" />
 		  <Counter />
           <TytulDynamiczny />
           <UserList />
