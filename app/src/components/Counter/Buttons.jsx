@@ -1,4 +1,4 @@
-function Buttons({ onIncrement, onDecrement }) {
+function Buttons({ onIncrement, onDecrement, onReset }) {
     return (
         <div>
             <button onClick={onDecrement}>-</button>
