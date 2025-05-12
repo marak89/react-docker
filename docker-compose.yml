@@ -1,6 +1,10 @@
 services:
   react-dev:
-    image: node:22
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args:
+        REACT_APP_API_TOKEN: ${REACT_APP_API_TOKEN}
     working_dir: /app
     volumes:
       - ./app:/app

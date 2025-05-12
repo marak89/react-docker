@@ -1,11 +1,10 @@
 # Etap 1: build
-FROM node:18-alpine AS builder
+FROM node:22 AS builder
 
 ARG REACT_APP_API_TOKEN
 ENV REACT_APP_API_TOKEN=$REACT_APP_API_TOKEN
 
-# curl w Alpine
-RUN apk add --no-cache curl
+RUN apt-get update && apt-get install -y curl
 
 # Pobranie i instalacja tailwindcss CLI (standalone)
 RUN curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64 && \
@@ -16,8 +15,6 @@ WORKDIR /app
 
 COPY app/package*.json ./
 RUN npm install
-
-
 
 COPY app/ .
 
