@@ -21,6 +21,7 @@ services:
   react-prod:
     build:
       context: .
+      dockerfile: Dockerfile
       args:
         REACT_APP_API_TOKEN: ${REACT_APP_API_TOKEN}
     ports:
